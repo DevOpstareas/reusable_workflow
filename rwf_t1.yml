@@ -1,0 +1,13 @@
+name: Imprimir variables
+on: workflow_call:
+  inputs:
+    nombre:
+      required: true
+      type: string
+
+jobs:
+  imprimir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir variable
+        run: echo 'Hola!!! como estas ${{ inputs.nombre }}'
