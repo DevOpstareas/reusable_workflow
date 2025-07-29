@@ -11,3 +11,4 @@ jobs:
     steps:
       - name: Imprimir variable
         run: echo 'Hola!!! como estas ${{ inputs.nombre }}'
+
