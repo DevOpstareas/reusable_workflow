@@ -1,9 +1,10 @@
 name: Imprimir variables
-on: workflow_call:
-  inputs:
-    nombre:
-      required: true
-      type: string
+on: 
+  workflow_call:
+    inputs:
+      nombre:
+        required: true
+        type: string
 
 jobs:
   imprimir:
